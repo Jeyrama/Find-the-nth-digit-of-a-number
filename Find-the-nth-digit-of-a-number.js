@@ -30,3 +30,10 @@ let findDigit = function(num, nth) {
 }
 
 // or
+
+let digitFinder = function(num, nth) {
+  if ( nth <= 0 ) return -1;
+  let arr = Math.abs(num).toString().split("");
+  if ( nth > arr.length ) return 0;
+  return Number(arr[arr.length - nth])
+}
