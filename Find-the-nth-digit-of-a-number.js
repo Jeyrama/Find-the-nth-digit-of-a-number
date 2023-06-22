@@ -28,3 +28,5 @@ let findDigit = function(num, nth) {
   }
   return x%10;
 }
+
+// or
